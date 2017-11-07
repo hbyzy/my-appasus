@@ -79,14 +79,14 @@ public class Test_concordia extends TestBase {
     }
     /*@Test
     public void aboutSubMenuTest() throws Exception {
-        HomePage homePage = new HomePage(driver);
+        HomePage HomePage = new HomePage(driver);
         HomePageActions homePageAction = new HomePageActions(driver);
         HomePageAsser homePageAsser = new HomePageAsser(driver);
         String[] subMenu;
 
-        subMenu = homePage.subMenu(homePage.menu_about, homePage.aboutCss);
+        subMenu = HomePage.subMenu(HomePage.menu_about, HomePage.aboutCss);
         for (int i = 0; i < subMenu.length; i++) {
-            homePageAction.hovermenu(homePage.menu_about, subMenu[i]);
+            homePageAction.hovermenu(HomePage.menu_about, subMenu[i]);
             System.out.println(subMenu[i]);
             result = homePageAsser.PageChangeAssert(subMenu[i]);
             if (result) {
@@ -109,15 +109,15 @@ public class Test_concordia extends TestBase {
 /*
     @Test
     public void testSubMenuA2() throws Exception {
-        HomePage homePage = new HomePage(driver);
+        HomePage HomePage = new HomePage(driver);
         HomePageActions homePageAction = new HomePageActions(driver);
         HomePageAsser homePageAsser = new HomePageAsser(driver);
 
-        homePageAction.hovermenu(homePage.menu_about, homePage.sub_About_2);
+        homePageAction.hovermenu(HomePage.menu_about, HomePage.sub_About_2);
         homePageAsser.PageChangeAssert("Strategic directions");
         driver.navigate().back();
         if (homePageAsser.PageChangeAssert("Concordia University")){
-            homePageAction.hovermenu(homePage.menu_about, homePage.sub_About_1);
+            homePageAction.hovermenu(HomePage.menu_about, HomePage.sub_About_1);
             homePageAsser.PageChangeAssert("Administration & governance");
         }else
             System.out.println("not go back HomePage");
