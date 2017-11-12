@@ -9,8 +9,8 @@ import org.junit.runner.RunWith;
     @CucumberOptions(
             features = "classpath:features",
             plugin = {"pretty", "html:target/cucumber-html-report",
-                    "json:target/cucumber.json"},
-            tags = "@topMenu"
+                    "json:target/cucumber.json"}
+//            tags = "@topMenu"
     )
     public class runTest{
 

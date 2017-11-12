@@ -42,7 +42,7 @@ public class Hooks {
             } catch (WebDriverException somePlatformsDontSupportScreenshots) {
                 System.err.println(somePlatformsDontSupportScreenshots.getMessage());
             }
-      }
+        }
         driver.close();
         driver.quit();
     }
